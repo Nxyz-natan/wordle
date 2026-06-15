@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wordle</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
+    <div id="intro">
+        <h1>Wordle</h1>
+        <p>Guess the 5 letter word</p>
+        <ul>
+            <li>💚 Green you got the right letter and position</li>
+            <li>💛 Yellow you got the right letter but not the right position</li>
+            <li>🩶 Grey you got neither the word right and the position</li>
+        </ul>
+        <div id="difficulty">
+            <button class="diff" data-guesses="6">Easy mode (6 Guesses)</button>
+            <button class="diff" data-guesses="4">Hard mode (4 Guesses)</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
