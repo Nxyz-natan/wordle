@@ -53,3 +53,61 @@ h1 {
     text-transform: uppercase;
     color: beige;
 }
+
+.tile.correct {
+    background-color: #538d4e;
+    border-color: #538d4e;
+}
+
+.tile.present {
+    background-color: #b59f3b;
+    border-color: #b59f3b;
+}
+
+.tile.absent {
+    background-color: #3a3a3c;
+    border-color: #3a3a3c;
+}
+
+#keyboard {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 8px;
+}
+
+.keyboard_row {
+display: flex;
+gap: 6px;
+}
+
+.key {
+    height: 58px;
+    min-width: 43px;
+    padding: 0 8px;
+    border-radius: 4px;
+    background-color: #818384;
+    color: antiquewhite;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.key.wide {
+    min-width: 65px;
+}
+
+.key.correct {
+    background-color: #538d4e;
+}
+
+.key.present {
+    background-color: #b59f3b;
+}
+
+.key.absent {
+    background-color: #3a3a3c;
+}
+
