@@ -1,3 +1,4 @@
+Css
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +6,9 @@
 }
 
 body {
-    background-color: lavenderblush;
-    color: cadetblue;
-    font-family: Arial, Helvetica, sans-serif;
+    background: #121213;
+    color: white;
+    font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +19,7 @@ body {
 h1 {
     font-size: 2rem;
     letter-spacing: 0.2rem;
-    border-bottom: 1px solid crimson;
+    border-bottom: 1px solid #3a3a3c;
     padding-bottom: 10px;
     margin-bottom: 20px;
     width: 100%;
@@ -30,13 +31,13 @@ h1 {
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 10px;
-    color: azure
+    color: white;
 }
 
 #board {
     display: grid;
-    grid-template-columns: repeat(5, 62px);
     grid-template-rows: repeat(6, 62px);
+    grid-template-columns: repeat(5, 62px);
     gap: 5px;
     margin-bottom: 20px;
 }
@@ -44,41 +45,41 @@ h1 {
 .tile {
     width: 62px;
     height: 62px;
-    border: 2px solid darkkhaki;
+    border: 2px solid #3a3a3c;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: beige;
+    color: white;
 }
 
 .tile.correct {
-    background-color: #538d4e;
+    background: #538d4e;
     border-color: #538d4e;
 }
 
 .tile.present {
-    background-color: #b59f3b;
+    background: #b59f3b;
     border-color: #b59f3b;
 }
 
 .tile.absent {
-    background-color: #3a3a3c;
+    background: #3a3a3c;
     border-color: #3a3a3c;
 }
 
 #keyboard {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .keyboard_row {
-display: flex;
-gap: 6px;
+    display: flex;
+    gap: 6px;
 }
 
 .key {
@@ -86,8 +87,8 @@ gap: 6px;
     min-width: 43px;
     padding: 0 8px;
     border-radius: 4px;
-    background-color: #818384;
-    color: antiquewhite;
+    background: #818384;
+    color: white;
     font-size: 0.85rem;
     font-weight: bold;
     border: none;
@@ -100,20 +101,20 @@ gap: 6px;
 }
 
 .key.correct {
-    background-color: #538d4e;
+    background: #538d4e;
 }
 
 .key.present {
-    background-color: #b59f3b;
+    background: #b59f3b;
 }
 
 .key.absent {
-    background-color: #3a3a3c;
+    background: #3a3a3c;
 }
 
-#Restart {
-    background-color: #6ad1e8;
-    color: aliceblue;
+#restart {
+    background: #538d4e;
+    color: white;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
@@ -123,8 +124,8 @@ gap: 6px;
     margin-bottom: 10px;
 }
 
-#Restart:hover {
-    background-color: #6aaf5e;
+#restart:hover {
+    background: #6aaf5e;
 }
 
 #intro {
@@ -138,6 +139,7 @@ gap: 6px;
 
 #intro p {
     font-size: 1.1rem;
+    color: #ccc;
 }
 
 #intro ul {
@@ -146,7 +148,7 @@ gap: 6px;
     flex-direction: column;
     gap: 10px;
     font-size: 1rem;
-    color: rgb(67, 102, 104);
+    color: #ccc;
 }
 
 #difficulty {
@@ -154,10 +156,10 @@ gap: 6px;
     gap: 10px;
 }
 
-.diff {
-    background-color: gray;
-    color: aliceblue;
-    border: #6ad1e8;
+.diff-btn {
+    background: #818384;
+    color: white;
+    border: none;
     border-radius: 4px;
     padding: 10px 20px;
     font-size: 1rem;
@@ -165,14 +167,14 @@ gap: 6px;
     cursor: pointer;
 }
 
-.diff.selected {
-    background-color: #538d4e;
+.diff-btn.selected {
+    background: #538d4e;
 }
 
-#start {
-    background-color: gray;
-    color: aliceblue;
-    border: #6ad1e8;
+#start-btn {
+    background: #538d4e;
+    color: white;
+    border: none;
     border-radius: 4px;
     padding: 12px 40px;
     font-size: 1.2rem;
@@ -180,8 +182,8 @@ gap: 6px;
     cursor: pointer;
 }
 
-#start:hover {
-    background-color: #6aaf5e;
+#start-btn:hover {
+    background: #6aaf5e;
 }
 
 #game {

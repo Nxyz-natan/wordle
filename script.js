@@ -1,4 +1,4 @@
-Js script
+
 const word_length = 5;
 let maxGuesses = 6;
 
@@ -101,7 +101,7 @@ function submitGuess() {
     const guess = currentGuess.toUpperCase();
 
     if (validWords.length > 0 && !validWords.includes(guess)) {
-        showMessage('Not a valid word!');
+        showMessage('Not a valid word Try again!');
         return;
     }
 
@@ -133,7 +133,7 @@ function submitGuess() {
     });
 
     if (guess === target) {
-        showMessage('You got it! 🎉', 0);
+        showMessage('Good job You got it! 🎉', 0);
         gameOver = true;
         return;
     }
